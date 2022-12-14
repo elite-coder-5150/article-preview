@@ -1,4 +1,8 @@
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     background: #EBF2F9;
     width: 100vw;
@@ -10,20 +14,88 @@ body {
 }
 
 .article-card {
-    width: 730px;
+    width: 770px;
     background: #fff;
     height: 280px;
     overflow: hidden;
     display: flex;
     box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.503415);;
-    
-    .right {
-        padding-top: 32px;
-        padding-left: 40px;
-        width: 365px;
+    flex-wrap: wrap;
+    flex-direction: column;
 
+    .right {
+        padding-left: 0px;
+        padding-top: 32px;
+        width: 365px;
         .article-title {
             font-size: 20px;
         }
+
+        .article-excerpt {
+            font-size: 13px;
+            line-height: 1.5rem;
+
+            color: #69819A;
+
+            margin: {
+                top: 12px;
+                bottom: 20px;
+            }
+        }
+
+        .article-footer {
+            display: flex;
+            flex-wrap: wrap;
+            width: 365px;
+            .profile {
+                margin-right: 10px;
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+            
+            .user-name {
+                font-size: 13px;
+                color: #69819A;
+                font-weight: 600;
+            }
+
+            .date {
+                font-size: 13px;
+                color: #99AFC4;
+                margin-top: 3px;
+            }
+        } /***** end of article footer *****/
+
+        .icon-bg {
+            width: 32px;
+            height: 32px;
+            background: #EBF2F9;
+            margin-left: auto;
+            border-radius: 16px;
+
+            &:hover {
+                background-color: #69819A;
+                color: #fff;
+            }
+
+            &:hover .share-icon {
+                background: url('../img/share-icon-white.svg') no-repeat center;
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+}
+
+.icon {
+    .share-icon {
+        background: url('../img/share-icon.svg') no-repeat center;
+        width: 16px;
+        height: 16px;
+
+        margin-left: 10px;
+        margin-top: 7px;
     }
 }
