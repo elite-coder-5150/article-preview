@@ -1,0 +1,26 @@
+body {
+  background: #EBF2F9;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Manrope", sans-serif;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.article-card {
+  width: 730px;
+  background: #fff;
+  height: 280px;
+  overflow: hidden;
+  display: flex;
+  box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.503415);
+}
+.article-card .right {
+  padding-top: 32px;
+  padding-left: 40px;
+  width: 365px;
+}
+.article-card .right .article-title {
+  font-size: 20px;
+}
