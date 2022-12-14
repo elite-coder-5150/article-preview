@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background: #EBF2F9;
   width: 100vw;
@@ -9,18 +15,74 @@ body {
 }
 
 .article-card {
-  width: 730px;
+  width: 770px;
   background: #fff;
   height: 280px;
   overflow: hidden;
   display: flex;
   box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.503415);
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 .article-card .right {
+  padding-left: 0px;
   padding-top: 32px;
-  padding-left: 40px;
   width: 365px;
+  /***** end of article footer *****/
 }
 .article-card .right .article-title {
   font-size: 20px;
+}
+.article-card .right .article-excerpt {
+  font-size: 13px;
+  line-height: 1.5rem;
+  color: #69819A;
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+.article-card .right .article-footer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 365px;
+}
+.article-card .right .article-footer .profile {
+  margin-right: 10px;
+}
+.article-card .right .article-footer .profile img {
+  width: 40px;
+  height: 40px;
+}
+.article-card .right .article-footer .user-name {
+  font-size: 13px;
+  color: #69819A;
+  font-weight: 600;
+}
+.article-card .right .article-footer .date {
+  font-size: 13px;
+  color: #99AFC4;
+  margin-top: 3px;
+}
+.article-card .right .icon-bg {
+  width: 32px;
+  height: 32px;
+  background: #EBF2F9;
+  margin-left: auto;
+  border-radius: 16px;
+}
+.article-card .right .icon-bg:hover {
+  background-color: #69819A;
+  color: #fff;
+}
+.article-card .right .icon-bg:hover .share-icon {
+  background: url("../img/share-icon-white.svg") no-repeat center;
+  width: 16px;
+  height: 16px;
+}
+
+.icon .share-icon {
+  background: url("../img/share-icon.svg") no-repeat center;
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;
+  margin-top: 7px;
 }
